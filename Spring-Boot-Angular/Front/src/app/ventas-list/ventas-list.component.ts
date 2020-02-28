@@ -95,12 +95,14 @@ export class VentasListComponent implements OnInit {
     private router: Router) {}
 
   ngOnInit() {
-    this.reloadData();
+    // this.reloadData();
   }
 
   reloadData() {
-    this.venta = this.ventaService.getEmployeesList();
+    // this.venta = this.ventaService.getEmployeesList();
   }
+
+  /*
 
   borrarVenta(id: number) {
     this.ventaService.borrarVenta(id)
@@ -112,7 +114,16 @@ export class VentasListComponent implements OnInit {
         error => console.log(error));
   }
 
+  */
+
   employeeDetails(id: number){
-    this.router.navigate(['details', id]);
+    // this.router.navigate(['details', id]);
+  }
+  delete(item) {
+    this.objeto.splice(item,1)
+  }
+  onSubmit(form){
+    console.log(form);
+    
   }
 }

@@ -37,6 +37,6 @@ export class CreateVentasComponent implements OnInit {
   }
 
   gotoList() {
-    this.router.navigate(['/ventas']);
+    // this.router.navigate(['/ventas']);
   }
 }

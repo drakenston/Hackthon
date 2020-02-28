@@ -1,6 +1,6 @@
 <h3>Nueva Venta</h3>
 <div [hidden]="submitted" style="width: 400px;">
-  <form (ngSubmit)="onSubmit()">
+  <form (ngSubmit)="onSubmit(form)">
     <div class="form-group">
       <label for="name">Region</label>
       <input type="text" class="form-control" id="Region required" [(ngModel)]="ventas.Region">
@@ -64,9 +64,4 @@
 
     <button type="submit" class="btn btn-success">Submit</button>
   </form>
-</div>
-
-<div [hidden]="!submitted">
-  <h4>You submitted successfully!</h4>
-  <!-- <button class="btn btn-success" (click)="newEmployee()">Add</button> -->
 </div>
